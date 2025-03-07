@@ -7,19 +7,20 @@
 			>
 				<div @click="iconClickLogo">
 					<img
-						src="@/assets/pageAssets/logo.png"
+						src="@/assets/pageAssets/logo2.png"
 						alt=""
 					/>
 					<h1>FRIDA</h1>
 				</div>
 			</router-link>
-			<nav :class="{open: isOpen}">
-				<router-link to="/" class="content__link">
+			<nav :class="{ open: isOpen }">
+				<router-link
+					to="/"
+					class="content__link"
+				>
 					<div @click="iconClick">
 						<p>Domů</p>
-						<div
-							:class="{isActive: isHome}"
-						></div>
+						<div :class="{ isActive: isHome }"></div>
 					</div>
 				</router-link>
 				<router-link
@@ -28,9 +29,7 @@
 				>
 					<div @click="iconClick">
 						<p>kvetiny</p>
-						<div
-							:class="{isActive: isFlowers}"
-						></div>
+						<div :class="{ isActive: isFlowers }"></div>
 					</div>
 				</router-link>
 				<router-link
@@ -39,9 +38,7 @@
 				>
 					<div @click="iconClick">
 						<p>ceník</p>
-						<div
-							:class="{isActive: isPrice}"
-						></div>
+						<div :class="{ isActive: isPrice }"></div>
 					</div>
 				</router-link>
 				<router-link
@@ -63,16 +60,14 @@
 				>
 					<div @click="iconClick">
 						<p>Kvíz</p>
-						<div
-							:class="{isActive: isQuiz}"
-						></div>
+						<div :class="{ isActive: isQuiz }"></div>
 					</div>
 				</router-link>
 			</nav>
 			<div
 				id="header--nav__icon"
 				@click="iconClick()"
-				:class="{open: isOpen}"
+				:class="{ open: isOpen }"
 			>
 				<span></span>
 				<span></span>
@@ -103,29 +98,19 @@ export default {
 	},
 	computed: {
 		isHome() {
-			return this.$route.path === '/'
-				? 'isActive'
-				: '';
+			return this.$route.path === '/' ? 'isActive' : '';
 		},
 		isFlowers() {
-			return this.$route.path.startsWith('/kvetiny')
-				? 'isActive'
-				: '';
+			return this.$route.path.startsWith('/kvetiny') ? 'isActive' : '';
 		},
 		isPrice() {
-			return this.$route.path.startsWith('/cenik')
-				? 'isActive'
-				: '';
+			return this.$route.path.startsWith('/cenik') ? 'isActive' : '';
 		},
 		isContactInfo() {
-			return this.$route.path.startsWith('/kontakty')
-				? 'isActive'
-				: '';
+			return this.$route.path.startsWith('/kontakty') ? 'isActive' : '';
 		},
 		isQuiz() {
-			return this.$route.path.startsWith('/kviz')
-				? 'isActive'
-				: '';
+			return this.$route.path.startsWith('/kviz') ? 'isActive' : '';
 		},
 	},
 };

@@ -85,22 +85,15 @@ header {
 					}
 
 					> div {
-						transition: background-color 0.2s
-							ease-in-out;
-						background-color: map-get(
-							$colors,
-							'pink'
-						);
+						transition: background-color 0.2s ease-in-out;
+						background-color: map-get($colors, 'pink');
 					}
 				}
 
 				.isActive {
 					position: absolute;
 					height: 2px;
-					background-color: map-get(
-						$colors,
-						'text-dark'
-					);
+					background-color: map-get($colors, 'text-dark');
 
 					bottom: 0;
 					left: 0;
@@ -116,12 +109,8 @@ header {
 					}
 					// underline div
 					.isActive {
-						background-color: map-get(
-							$colors,
-							'pink'
-						);
-						transition: background-color 0.2s
-							ease-in-out;
+						background-color: map-get($colors, 'pink');
+						transition: background-color 0.2s ease-in-out;
 					}
 				}
 			}
@@ -132,11 +121,8 @@ header {
 				top: 80px;
 				width: 100vw;
 				height: calc(100vh - 80px);
-				background-color: map-get(
-					$colors,
-					'background-grey'
-				);
-				height: calc(100vw-80px);
+				background-color: map-get($colors, 'background-grey');
+				height: calc(100vw - 80px);
 				z-index: 100;
 				transition: 0.2s ease-in-out;
 				flex-direction: column;

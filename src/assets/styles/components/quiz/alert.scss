@@ -1,0 +1,48 @@
+.alertConainer {
+	@include default-site-width;
+
+	background-color: map-get($colors, 'background-grey');
+
+	box-sizing: border-box;
+	padding: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+
+	position: relative;
+	border-radius: 0.2rem;
+	overflow: hidden;
+
+	margin-bottom: 4rem;
+
+	.alertConainer__divider {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 0.4rem;
+		background-color: map-get($colors, 'pink');
+	}
+
+	.alertConainer__alertHeading {
+		font-size: 2rem;
+		color: map-get($colors, 'text-dark');
+	}
+
+	.alertConainer__alertDescription {
+		font-size: 1.25rem;
+		font-weight: 400;
+		color: map-get($colors, 'text-dark');
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.alertConainer__restartButton {
+		@include button;
+		width: auto;
+
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}

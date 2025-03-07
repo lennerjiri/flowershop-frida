@@ -1,0 +1,209 @@
+[
+	{
+		"_id": 1,
+		"name": "Tulipán",
+		"price": 100,
+		"purpose": ["Dárek"],
+		"description": "Tulipány jsou vytrvalé cibulovité rostliny, listy jsou jednoduché, střídavé, horní listy se postupně zmenšují oproti spodním, s listovými pochvami. Čepele listů jsou čárkovité, kopinaté až podlouhlé, někdy trochu ztlustlé, se souběžnou žilnatinou. Květy jsou poměrně velké, většinou jednotlivé na vrcholu stonku. Okvětí se skládá ze šesti okvětních lístků ve dvou přeslenech. Tyčinek je šest ve dvou přeslenech, jsou volné. Gyneceum se skládá ze tří plodolistů, je synkarpní, semeník je svrchní. Plodem je tobolka. Tulipány se množí cibulkami, které se oddělují od matečné rostliny (na podzim).",
+		"origin": ["Dovezená"],
+		"colors": ["Červená", "Žlutá", "Oranžová"],
+		"img": "tulip1.png",
+		"carousel": [
+			"tulip1.png",
+			"tulip2.jpg",
+			"tulip3.jpg"
+		]
+	},
+	{
+		"_id": 2,
+		"name": "Gerbera",
+		"price": 100,
+		"purpose": ["Dekorační"],
+		"description": "Gerbera (Gerbera) je rod okrasných rostlin z řádu hvězdnicotvaré (Asterales) a čeledi hvězdnicovitých (Asteraceae). Byla pojmenována na počest německého botanika a přírodovědce Traugotta Gerbera († 1743), který podnikal rozsáhlé cesty po Rusku a byl přítelem Carola Linnaea. Je rozšířena v Jižní Americe, Africe a tropické Asii.",
+		"origin": ["Pěstovaná"],
+		"colors": ["Červená", "Žlutá", "Oranžová"],
+		"img": "gerbera1.jpg",
+		"carousel": [
+			"gerbera1.jpg",
+			"gerbera2.jpg",
+			"gerbera3.jpg"
+		]
+	},
+	{
+		"_id": 3,
+		"name": "Pivoňky",
+		"price": 100,
+		"purpose": ["Dekorační", "Dárek"],
+		"description": "Pivoňka (Paeonia) je jediný rod čeledi pivoňkovité (Paeoniaceae) z řádu lomikamenotvaré (Saxifragales) vyšších dvouděložných rostlin. Obsahuje asi 35 druhů, vyskytujících se převážně v mírně teplých oblastech severní polokoule. Jedná se o velmi významné rostliny v okrasném zahradnictví, jichž bylo vyšlechtěno veliké množství kultivarů, které jsou oproti čistým botanickým formám převážně plnokvěté. Uplatňují se i jako řezané květiny. V kultuře se pěstují již více než dva tisíce let; první záznamy pocházejí z období čínské dynastie Chan (3. století př. n. l.). ",
+		"origin": ["Luční"],
+		"colors": ["Červená", "Růžová"],
+		"img": "peonies1.jpg",
+		"carousel": [
+			"peonies1.jpg",
+			"peonies2.jpg",
+			"peonies3.jpg"
+		]
+	},
+	{
+		"_id": 4,
+		"name": "Heřmánek",
+		"price": 100,
+		"purpose": ["Smuteční", "Sváteční"],
+		"description": "Heřmánek pravý (Matricaria chamomilla, synonymum Matricaria recutita), také heřmánek lékařský, je jednoletá nebo ozimá léčivá rostlina z čeledi hvězdnicovitých. Hojně se využívá v kosmetice a léčitelství, v aromaterapii i homeopatii. Je to jedna z nejoblíbenějších a velmi dlouho známých léčivých bylin s prakticky univerzálním účinkem.",
+		"origin": ["Luční"],
+		"colors": ["Bílá"],
+		"img": "chamomile1.jpg",
+		"carousel": [
+			"chamomile1.jpg",
+			"chamomile2.jpg",
+			"chamomile3.jpg"
+		]
+	},
+	{
+		"_id": 5,
+		"name": "Orchidei",
+		"price": 100,
+		"purpose": ["Dekorační", "Dárek"],
+		"description": "Vstavačovité (Orchidaceae) neboli orchideje je čeleď jednoděložných rostlin z řádu chřestotvaré (Asparagales). Některé starší taxonomické systémy ji řadí do samostatného řádu vstavačotvaré (Orchidales). Jejich název pochází z řeckého slova orchis, které v překladu znamená varle – podle tvaru podzemních hlíz rodu vstavač (Orchis). Tyto rostliny jsou zvláště ceněny pro své krásné květy všech odstínů i barev. Z tropických plodin sem patří ale i hospodářsky významná vanilka získávaná z plodů vanilovníku. Významným sběratelem orchidejí své doby byl český cestovatel, zahradník a botanik Benedikt Roezl.",
+		"origin": ["Dovezená"],
+		"colors": ["Fialová", "Bílá"],
+		"img": "orchid1.jpg",
+		"carousel": [
+			"orchid1.jpg",
+			"orchid2.jpg",
+			"orchid3.jpg"
+		]
+	},
+	{
+		"_id": 6,
+		"name": "Karafiát",
+		"price": 100,
+		"purpose": ["Smuteční", "Dárek", "Dekorační"],
+		"description": "Hvozdík zahradní neboli karafiát (Dianthus caryophyllus) je okrasná rostlina z čeledi hvozdíkovitých. Pochází z oblasti okolo Středozemního moře, kde roste planě. Ve střední Evropě se pěstuje ve sklenících nebo na záhonech jako dvouletka, kvete od května do září. Vyžaduje dobře osluněné stanoviště a ochranu před parazity, jako je rez karafiátová. Dosahuje výšky 30–80 centimetrů, má šedozelený stonek a listy, květenstvím je okolík. V přírodě má květ růžovou až fialovou barvu, již od starověku se šlechtí velkokvěté odrůdy, vyznačující se pestrými barvami.",
+		"origin": ["Pěstovaná"],
+		"colors": ["Oranžová", "Růžová", "Červená"],
+		"img": "caranation1.jpg",
+		"carousel": [
+			"caranation1.jpg",
+			"caranation2.jpg",
+			"caranation3.jpg"
+		]
+	},
+	{
+		"_id": 7,
+		"name": "Lilie",
+		"price": 100,
+		"purpose": ["Sváteční", "Dárek", "Dekorační"],
+		"description": "Jedná se o vytrvalé pozemní byliny, s cibulemi, které jsou často složeny z jednotlivých zdužnětělých šupin. Jsou to rostliny jednodomé s oboupohlavnými květy. Listy jsou střídavé nebo v přeslenech (3-20 četných), jsou přisedlé nebo téměř přisedlé. Čepele listů jsou celokrajné, většinou čárkovité, kopinaté, eliptické nebo obvejčité, žilnatina je souběžná. V paždí listů se u některých druh nacházejí pacibulky, které slouží k vegetativnímu rozmnožování. Květy jsou oboupohlavné, jsou v květenstvích, zpravidla v hroznech, vzácněji v okolících nebo chocholících, někdy je květ pouze jednotlivý. ",
+		"origin": ["Pěstovaná"],
+		"colors": ["Bílá", "Růžová", "Červená"],
+		"img": "lily1.jpg",
+		"carousel": ["lily1.jpg", "lily2.jpg", "lily3.jpg"]
+	},
+	{
+		"_id": 8,
+		"name": "Slunečnice",
+		"price": 100,
+		"purpose": ["Dekorační"],
+		"description": "Mezi slunečnicemi nalezneme jednoleté i vytrvalé rostliny. Mají silný, chlupatý stonek s velkými, řapíkatými, zubatými listy. Níže rostoucí listy jsou střídavé, oválné nebo srdčité, listy při vrcholu stonku jsou užší a střídavé. Dosahují i značné výšky, 60 – 400 cm. Detail struktury listu slunečnice Velké úbory se žlutými jazýčkovitými květy vyrůstají na konci stonku. U slunečnice roční existují i odrůdy se smetanovými, oranžovými nebo červenými květy. Mladá rostlina je heliotropní, tzn, že květy se otáčejí za sluncem. Až při dozrávání semen úbor postupně těžkne a sklání se k zemi. ",
+		"origin": ["Luční"],
+		"colors": ["Žlutá"],
+		"img": "sunflower1.jpg",
+		"carousel": [
+			"sunflower1.jpg",
+			"sunflower2.jpg",
+			"sunflower3.jpg"
+		]
+	},
+	{
+		"_id": 9,
+		"name": "Frézie",
+		"price": 100,
+		"purpose": ["Dekorační", "Dárek", "Smuteční"],
+		"description": "Barevné spektrum květin zahrnuje tóny od bílé přes žlutou, oranžovou, červenou až po fialovou. Mezi plnokvětými fréziemi se objevují barvy žluté, bílé, červené, růžové a nachové. Listy jsou zelené, ploché a špičaté.",
+		"origin": ["Dovezená"],
+		"colors": ["Červená"],
+		"img": "freesia1.jpg",
+		"carousel": ["freesia1.jpg", "freesia2.jpg"]
+	},
+	{
+		"_id": 10,
+		"name": "Chryzantémy",
+		"price": 100,
+		"purpose": [
+			"Dekorační",
+			"Dárek",
+			"Smuteční",
+			"Sváteční"
+		],
+		"description": "Chryzantémy jsou vytrvalé byliny nebo polokeře s přímými nebo vystoupavými, hustě olistěnými lodyhami. Jejich listy jsou střídavé, řapíkaté, často mírně dužnaté, peřenodílné nebo nepravidelně laločnatého tvaru. Květenstvím je úbor; na rostlině jsou úbory umístěny buď jednotlivě, nebo v chudé chocholičnaté latě. Okrajové květy jsou jazykovité, se zmáčklou korunní trubkou a obvykle samičí, květy terče trubkovité, u plnokvětých kultivarů je trubka často výrazně prodloužená či přeměněná v ligulu. Zahradní kultivary silně voní. Plodem jsou lysé vejčité nažky bez chmýru.",
+		"origin": ["Dovezená"],
+		"colors": ["Červená", "Žlutá", "Růžová"],
+		"img": "chrysanthemums1.jpg",
+		"carousel": [
+			"chrysanthemums1.jpg",
+			"chrysanthemums2.jpg",
+			"chrysanthemums3.jpg"
+		]
+	},
+	{
+		"_id": 11,
+		"name": "Eustoma",
+		"price": 100,
+		"purpose": [
+			"Dekorační",
+			"Dárek",
+			"Smuteční",
+			"Sváteční"
+		],
+		"description": "Jícnovky jsou vzpřímené, zpravidla jednoleté (výjimečně krátce vytrvalé), lysé, ojíněné byliny s jednoduchými, vstřícnými, přisedlými, na bázi zpravidla objímavými listy. Čepel listů je celokrajná, se 3 souběžnými žilkami. Spodní listy bývají nahloučené v přízemní růžici. Lodyha je přímá nebo vystoupavá. Květy jsou modré, bílé, růžové nebo purpurové, velké a vyrůstající na dlouhých stopkách, jednotlivé nebo ve vrcholičnatých latách. Kalich je hluboce členěný na 5 až 6 úzkých laloků. ",
+		"origin": ["Pěstovaná"],
+		"colors": ["Červená", "Bílá", "Růžová"],
+		"img": "eustoma1.jpg",
+		"carousel": [
+			"eustoma1.jpg",
+			"eustoma2.jpg",
+			"eustoma3.jpg"
+		]
+	},
+	{
+		"_id": 12,
+		"name": "Hydrangea",
+		"price": 100,
+		"purpose": [
+			"Dekorační",
+			"Dárek",
+			"Smuteční",
+			"Sváteční"
+		],
+		"description": "Hortenzie jsou opadavé nebo stálezelené, vzpřímeně nebo šplhavě rostoucí polokeře, keře a stromy s jednoduchými vstřícnými listy. Na listech, větévkách a v květenství jsou chlupy různých typů. Čepele listů jsou celistvé a na okraji celokrajné či různě zubaté, řidčeji zpeřeně laločnaté. Palisty chybějí. Květy jsou uspořádány v hustých vrcholových (řidčeji úžlabních) vrcholících či thyrsech. U některých druhů jsou na okraji květenství přítomny sterilní květy se zvětšenými kališními lístky, u některých pěstovaných kultivarů vyplňují celé květenství.",
+		"origin": ["Pěstovaná"],
+		"colors": ["Bílá", "Modrá"],
+		"img": "hydrangea1.jpg",
+		"carousel": [
+			"hydrangea1.jpg",
+			"hydrangea2.jpg",
+			"hydrangea3.jpg"
+		]
+	},
+	{
+		"_id": 13,
+		"name": "Amarylis",
+		"price": 100,
+		"purpose": [
+			"Dekorační",
+			"Dárek",
+			"Smuteční",
+			"Sváteční"
+		],
+		"description": "Amarylky jsou vytrvalé, vzrůstné, sezónně zatahující cibuloviny. Listy jsou řemenovité, se střední žilkou, uspořádané v přízemní růžici, která je v době květu zaschlá. \n Cibule jsou robustní. Květy jsou dvoustranně souměrné, oboupohlavné, uspořádané v nepravém okolíku. Květenství spočívá na tuhém, vzpřímeném, za plodu se prodlužujícím stvolu a je podepřené 2 brzy opadávajícími listeny. Okvětí je rozestálé, složené ze 6 volných plátků ve dvou kruzích, bez okvětní trubky. Tyčinek je 6, na bázi jsou velmi krátce srostlé a shloučené nad spodním okvětním lístkem. Čnělka je dlouhá, prohnutá, zakončená trojlaločnou bliznou. ",
+		"origin": ["Dovezená"],
+		"colors": ["Červená"],
+		"img": "amaryllis1.jpg",
+		"carousel": [
+			"amaryllis1.jpg",
+			"amaryllis2.jpg",
+			"amaryllis3.jpg"
+		]
+	}
+]

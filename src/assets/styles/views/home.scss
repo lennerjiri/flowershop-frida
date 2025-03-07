@@ -1,0 +1,31 @@
+@use 'sass:map';
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.Home {
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.imgContainer__headingContainer {
+		display: flex;
+		flex-direction: column;
+		height: 70%;
+		justify-content: space-between;
+
+		.imgContainer__motto {
+			font-family: 'Playfair Display', serif;
+			color: #2a30367e;
+			font-size: 1.3em;
+			width: 300px;
+		}
+		.imgContainer__signature {
+			width: 100px;
+			height: auto;
+		}
+	}
+
+	@include banner;
+}

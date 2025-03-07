@@ -1,0 +1,161 @@
+@use 'sass:map';
+@import '../../utils/variables.scss';
+
+.Review {
+	@include default-site-width;
+	display: flex;
+	flex-direction: column;
+	height: 40vh;
+	padding-bottom: 10vh;
+	font-family: 'lora';
+	align-items: center;
+
+	@include width-breakpoint(950) {
+		padding-bottom: 0vh;
+	}
+
+	.Review-typeHeading {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding-bottom: 20px;
+
+		h6 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
+			font-size: 1rem;
+			text-transform: uppercase;
+			padding-bottom: 2px;
+		}
+
+		div {
+			width: 140%;
+			height: 3px;
+			background-color: map-get($colors, 'pink');
+		}
+	}
+
+	h1 {
+		font-size: 3.5em;
+		padding-bottom: 5%;
+
+		@include width-breakpoint(950) {
+			font-size: 2.5em;
+		}
+
+		@include width-breakpoint(650) {
+			font-size: 2em;
+		}
+
+		@include width-breakpoint(550) {
+			font-size: 1.5em;
+		}
+		@include width-breakpoint(370) {
+			font-size: 1.25em;
+		}
+	}
+
+	.Review-carousel {
+		display: flex;
+		width: 80%;
+		height: 60%;
+
+		@include width-breakpoint(950) {
+			width: 90%;
+		}
+
+		@include width-breakpoint(650) {
+			width: 100%;
+		}
+
+		flex-direction: row;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+
+		.Review-carousel-controll {
+			color: #2a3036;
+			font-size: 4em;
+			opacity: 0.5;
+			padding-top: 5%;
+
+			@include width-breakpoint(650) {
+				font-size: 2.5em;
+			}
+
+			position: absolute;
+
+			&:first-child {
+				left: 0;
+			}
+
+			&:last-child {
+				right: 0;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		.Review-carousel-content {
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transition: 1s;
+			height: 120%;
+			justify-content: space-around;
+
+			.Review-carousel-content-img {
+				height: 40%;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				aspect-ratio: 1/1;
+				border-radius: 50%;
+
+				@include width-breakpoint(550) {
+					width: 30%;
+					height: 30%;
+				}
+			}
+
+			> p {
+				text-align: center;
+				width: 400px;
+				font-size: 1.3em;
+
+				@include width-breakpoint(550) {
+					font-size: 1em;
+					width: 300px;
+				}
+				@include width-breakpoint(370) {
+					width: 200px;
+				}
+			}
+
+			.Review-carousel-userinfo {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.Review-carousel-name {
+					text-align: center;
+					width: 100vw;
+					font-size: 1em;
+					padding-bottom: 5px;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+
+				.Review-carousel-proffesion {
+					text-align: center;
+					width: 100vw;
+					color: #2a3036;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}

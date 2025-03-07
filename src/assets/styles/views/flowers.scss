@@ -1,0 +1,73 @@
+.flowerContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include banner;
+	@include subtitle;
+
+	.flowerContainer__selectButton {
+		padding-bottom: 3rem;
+		@include default-site-width;
+		display: flex;
+		position: relative;
+
+		.selectButton__button {
+			display: flex;
+			gap: 0.5rem;
+
+			@include button {
+				width: auto;
+				padding: 0.75rem 0;
+				width: 180px;
+				align-self: flex-start;
+			}
+		}
+
+		.selectButton__button___active {
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		.selectButton__selectList {
+			position: absolute;
+			width: 175px;
+			top: 42px;
+			left: 0;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			border-radius: 0.2rem;
+			border-top-right-radius: 0;
+			border-top-left-radius: 0;
+			background-color: map-get($colors, 'white');
+			border: 0.15rem solid
+				map-get($colors, 'dark-text');
+			z-index: 1;
+
+			font-family: 'Montserrat', sans-serif;
+
+			.selectList__item {
+				box-sizing: border-box;
+				padding: 1rem;
+				width: 100%;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				&:hover {
+					cursor: pointer;
+					background-color: map-get(
+						$colors,
+						'pink'
+					);
+					color: #fff;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,239 @@
+@use 'sass:map';
+@import '../../utils/variables.scss';
+
+header {
+	width: 100vw;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: map-get($colors, 'background-grey');
+	position: fixed;
+
+	z-index: 100;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		height: 1px;
+		background-color: #d7d7d7;
+	}
+
+	.header--content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 120;
+		@include default-site-width;
+		.header--content--logo {
+			z-index: 110;
+			display: flex;
+			align-items: center;
+			gap: 0.5em;
+			color: map-get($colors, 'text-dark');
+			text-decoration: none;
+
+			> div {
+				display: flex;
+				align-items: center;
+			}
+
+			img {
+				height: 60px;
+			}
+			h1 {
+				font-size: 1.8rem;
+				font-family: 'Playfair Display', serif;
+			}
+		}
+		nav {
+			width: 500px;
+			height: 80px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.content__link {
+				transition: all 0.2s ease-in-out;
+
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 400;
+				font-size: 1.3rem;
+				text-decoration: none;
+				text-transform: capitalize;
+				transition: color 0.2s ease-in-out;
+
+				color: map-get($colors, 'text-dark');
+
+				@include width-breakpoint(950) {
+					font-size: 1.7rem;
+					line-height: 6rem;
+				}
+
+				position: relative;
+				height: 50%;
+				display: flex;
+				align-items: center;
+
+				> div {
+					p {
+						transition: all 0.2s ease-in-out;
+					}
+
+					> div {
+						transition: background-color 0.2s
+							ease-in-out;
+						background-color: map-get(
+							$colors,
+							'pink'
+						);
+					}
+				}
+
+				.isActive {
+					position: absolute;
+					height: 2px;
+					background-color: map-get(
+						$colors,
+						'text-dark'
+					);
+
+					bottom: 0;
+					left: 0;
+					right: 0;
+				}
+
+				&:hover {
+					cursor: pointer;
+
+					p {
+						transition: all 0.2s ease-in-out;
+						color: map-get($colors, 'pink');
+					}
+					// underline div
+					.isActive {
+						background-color: map-get(
+							$colors,
+							'pink'
+						);
+						transition: background-color 0.2s
+							ease-in-out;
+					}
+				}
+			}
+
+			@include width-breakpoint(950) {
+				position: absolute;
+				left: 100vw;
+				top: 80px;
+				width: 100vw;
+				height: calc(100vh - 80px);
+				background-color: map-get(
+					$colors,
+					'background-grey'
+				);
+				height: calc(100vw-80px);
+				z-index: 100;
+				transition: 0.2s ease-in-out;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				gap: 3rem;
+				.content__link {
+					height: 4rem;
+				}
+			}
+		}
+		nav.open {
+			left: 0;
+		}
+
+		// icon source: https://codepen.io/designcouch/pen/ExvwPY
+		#header--nav__icon {
+			width: 35px;
+			height: 25px;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: 0.2s ease-in-out;
+			-moz-transition: 0.2s ease-in-out;
+			-o-transition: 0.2s ease-in-out;
+			transition: 0.2s ease-in-out;
+
+			z-index: 110;
+			display: none;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			@include width-breakpoint(950) {
+				display: block;
+			}
+		}
+
+		#header--nav__icon span {
+			display: block;
+			position: absolute;
+			height: 3px;
+			width: 100%;
+			background: map-get($colors, 'text-dark');
+			border-radius: 9px;
+			opacity: 1;
+			left: 0;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: 0.2s ease-in-out;
+			-moz-transition: 0.2s ease-in-out;
+			-o-transition: 0.2s ease-in-out;
+			transition: 0.2s ease-in-out;
+		}
+
+		#header--nav__icon span:nth-child(1) {
+			top: 0px;
+		}
+
+		#header--nav__icon span:nth-child(2),
+		#header--nav__icon span:nth-child(3) {
+			top: 11px;
+		}
+
+		#header--nav__icon span:nth-child(4) {
+			top: 22px;
+		}
+
+		#header--nav__icon.open span:nth-child(1) {
+			top: 11px;
+			width: 0%;
+			left: 50%;
+		}
+
+		#header--nav__icon.open span:nth-child(2) {
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+		#header--nav__icon.open span:nth-child(3) {
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+
+		#header--nav__icon.open span:nth-child(4) {
+			top: 13px;
+			width: 0%;
+			left: 50%;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+#app {
+	//overflow-x: hidden; // position sticky does not work because of this
+
+	main {
+		padding-top: 80px;
+		// temporary
+		width: 100%;
+		min-height: 61.5vh;
+		height: fit-content;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

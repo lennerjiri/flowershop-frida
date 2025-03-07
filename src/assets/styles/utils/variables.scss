@@ -1,0 +1,25 @@
+$colors: (
+	// texts
+	'pink': #c44569,
+	'text-dark': #16191c,
+	'text-grey': #2a3036,
+	'footer-lights-grey': #767676,
+	// získáno z color pickeru
+	'footer-dark-grey': #222528,
+
+	// získáno z color pickeru
+	// backgrounds
+	'background-grey': #ebebe9,
+	'white': #ffffff,
+
+	// others
+	'logo-green': #a4dd7f
+);
+
+$sizes: (
+	// "default-width": min(90vw, 1400px),
+	'max-site-width': 1400px,
+	'min-site-width': 90vw
+);
+
+// default-width: min(90%, 90rem),

@@ -1,0 +1,96 @@
+@use 'sass:map';
+@import '../../utils/variables.scss';
+@import '../../utils/mixins.scss';
+
+footer {
+	height: 280px;
+	background-color: map-get($colors, 'background-grey');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	@include width-breakpoint(950) {
+		height: 400px;
+	}
+	@include width-breakpoint(500) {
+		height: 680px;
+	}
+
+	.footer--content {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		place-self: center;
+		@include default-site-width;
+		@include width-breakpoint(950) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+		@include width-breakpoint(500) {
+			grid-template-columns: 1fr;
+		}
+
+		.footer--content__column {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			@include width-breakpoint(500) {
+				align-items: center;
+			}
+
+			h2 {
+				text-transform: uppercase;
+				font-size: 1rem;
+				font-weight: 500;
+				line-height: 2.3rem;
+				color: map-get($colors, 'footer-dark-grey');
+				margin-bottom: 6px;
+			}
+			a {
+				text-decoration: none;
+				font-weight: 400;
+				line-height: 1.5rem;
+				font-size: 1.1rem;
+				color: map-get(
+					$colors,
+					'footer-lights-grey'
+				);
+				margin-bottom: 3px;
+
+				&:hover {
+					transition: 0.2s;
+					color: map-get($colors, 'pink');
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.footer--divider {
+		height: 1px;
+		background-color: map-get(
+			$colors,
+			'footer-lights-grey'
+		);
+		margin-top: 35px;
+		@include default-site-width;
+	}
+	.footer--copyright {
+		@include default-site-width;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 15px;
+		color: map-get($colors, 'footer-lights-grey');
+
+		@include width-breakpoint(500) {
+			flex-direction: column;
+			align-items: center;
+			> p:first-child {
+				margin-bottom: 10px;
+			}
+			p {
+				text-align: center;
+			}
+		}
+	}
+}

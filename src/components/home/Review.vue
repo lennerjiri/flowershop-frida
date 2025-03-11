@@ -17,11 +17,7 @@
 				class="Review-carousel-content"
 				v-for="review in reviews"
 				:key="review.name"
-				:style="[
-					reviewNow == review.tag
-						? {width: '80%'}
-						: {width: '0%'},
-				]"
+				:style="[reviewNow == review.tag ? { width: '80%' } : { width: '0%' }]"
 			>
 				<div
 					class="Review-carousel-content-img"
@@ -59,24 +55,24 @@ export default {
 		return {
 			reviews: [
 				{
-					img: 'abdulAlibaba.jpg',
-					text: 'Se službama tohoto květinářství jsem nadmíru spokojen. Kytky mi dovezli až do kanceláří.',
-					name: 'Abdul Alibaba',
-					proffesion: 'Manažer Call Center',
+					img: 'mateo.jpg',
+					text: 'Se službama tohoto květinářství jsem nadmíru spokojen!',
+					name: 'Mateo Ary',
+					proffesion: 'Ceo of Ary Corp',
 					tag: 0,
 				},
 				{
-					img: 'mhatejSitehaml.png',
-					text: 'Květiny pro mé kocourky kupuji jenom tady.',
-					name: 'Mhatěj Sitehaml',
-					proffesion: '(M)učitel',
+					img: 'maria.png',
+					text: 'Gorgeous!',
+					name: 'Maria Ravena',
+					proffesion: 'Influencer',
 					tag: 1,
 				},
 				{
-					img: 'zena.png',
-					text: 'Very pretty end beautiful!',
-					name: 'Hemani Raveena',
-					proffesion: 'Influencer',
+					img: 'ito.jpg',
+					text: 'Get all of my flowers here!',
+					name: 'Ito Kei',
+					proffesion: 'Software Engineer',
 					tag: 2,
 				},
 			],
@@ -89,14 +85,12 @@ export default {
 			if (this.running == false) {
 				if (Where == 1) {
 					this.reviewNow++;
-					if (this.reviewNow == 4)
-						this.reviewNow = 0;
+					if (this.reviewNow == 4) this.reviewNow = 0;
 					this.Moving();
 					return;
 				}
 				this.reviewNow--;
-				if (this.reviewNow == -1)
-					this.reviewNow = 3;
+				if (this.reviewNow == -1) this.reviewNow = 3;
 				this.Moving();
 				return;
 			}

@@ -32,19 +32,16 @@
 			</div>
 			<div class="footer--content__column">
 				<h2>sociální sítě</h2>
-				<a href="https://www.instagram.com/?hl=en"
-					>Instagram</a
-				>
-				<a href="https://www.facebook.com/"
-					>Facebook</a
-				>
-				<a href="https://www.pinterest.com/"
-					>Pinterest</a
-				>
+				<a href="https://www.instagram.com/?hl=en">Instagram</a>
+				<a href="https://www.facebook.com/">Facebook</a>
+				<a href="https://www.pinterest.com/">Pinterest</a>
 			</div>
 			<div class="footer--content__column">
 				<h2>stránka</h2>
-				<router-link to="/" class="content__link">
+				<router-link
+					to="/"
+					class="content__link"
+				>
 				</router-link>
 				<router-link
 					to="/kvetiny"
@@ -68,8 +65,8 @@
 		</div>
 		<div class="footer--divider"></div>
 		<div class="footer--copyright">
-			<p>© 2022 frida</p>
-			<p>Designed and Produced by SSPS Group</p>
+			<p>© 2025 Frida</p>
+			<p>Developed by team SSPS</p>
 		</div>
 	</footer>
 </template>
